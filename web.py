@@ -8,8 +8,8 @@ with col1:
 with col2:
     probability = st.number_input("Probability")
 
-prob_based_on_price = fn.price_to_probability(price)
-edge = fn.edge(prob_based_on_price, probability)
+
+edge = fn.edge(fn.price_to_probability(price), probability)
 
 
 st.button("Calculate Edge", on_click=st.write(f"Edge: {edge}%"))
