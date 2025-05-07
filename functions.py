@@ -8,6 +8,6 @@ def price_to_probability(price):
     return probability * 100
 
 def edge(price_probabliity, model_probablity):
-    return price_probabliity - model_probablity
+    return model_probablity - price_probabliity
 
 
